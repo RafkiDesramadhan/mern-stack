@@ -4,9 +4,6 @@ import Fade from "react-reveal/Fade";
 
 import ImageHero from "assets/images/img-hero.jpg";
 import ImageHero_ from "assets/images/img-hero-frame.jpg";
-import IconCities from "assets/images/icons/icon-cities.svg";
-import IconTraveler from "assets/images/icons/icon-traveler.svg";
-import IconTreasure from "assets/images/icons/icon-treasure.svg";
 
 import Button from "elements/Button";
 
@@ -48,7 +45,7 @@ export default function Hero(props) {
             <div className="row mt-5" style={{ marginTop: 80 }}>
               <div className="col-auto" style={{ marginRight: 35 }}>
                 <img
-                  src={IconTraveler}
+                  src="/images/icon-traveler.svg"
                   alt={`${props.data.travelers} Travelers`}
                   widht="36"
                   height="36"
@@ -62,13 +59,13 @@ export default function Hero(props) {
               </div>
               <div className="col-auto" style={{ marginRight: 35 }}>
                 <img
-                  src={IconTreasure}
-                  alt={`${props.data.treasures} treasures`}
+                  src="/images/icon-treasure.svg"
+                  alt={`${props.data.treasure} treasures`}
                   widht="36"
                   height="36"
                 />
                 <h6 className="mt-3">
-                  {formatNumber(props.data.treasures)}{" "}
+                  {formatNumber(<props className="data treasure"></props>)}{" "}
                   <span className="text-gray-500 font-weight-light">
                     treasures
                   </span>
@@ -76,8 +73,8 @@ export default function Hero(props) {
               </div>
               <div className="col-auto">
                 <img
-                  src={IconCities}
-                  alt={`${props.data.cities} Travelers`}
+                  src="/images/icon-cities.svg"
+                  alt={`${props.data.cities} cities`}
                   widht="36"
                   height="36"
                 />
